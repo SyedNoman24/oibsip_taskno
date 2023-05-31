@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> landing page</title>
+	
+	<style type="text/css">
+	*{padding:0; margin:0; box-sizing: border-box;}
+	header{
+		width:100%;
+		height:100vh;;
+		background:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2)),url('home.jpeg');
+		background-size:cover;
+		font-family:sans-serif;
+	}
+	nav{
+		width:100%;
+		height:100px;
+		
+		color:white;
+		display:flex;
+		justify-content:space-around;
+		align-items:center;
+		}
+	.logo{
+		font-size:2em;
+		leter-spacing:2px;
+	}
+		
+	.menu a{
+		text-decoration:none;
+		color:white;
+		padding:10px 20px;
+		font-size:20px;
+		position:relative;
+	}
+	.menu a:before{
+		content:' ';
+		position:absolute;
+		top:0;
+		left:0;
+		width:0%;
+		height:100%;
+		border-bottom:2px solid indianred;
+		transition:0.4s linear;
+	}
+	.menu a:hover:before{
+		width:90%;
+	}
+	
+	.menu label{
+		text-deoration:none;
+		color:white;
+		padding:10px;
+		font-size:20px;
+	
+	}
+	
+	
+	.Register a{
+		text-decoration:none;
+		color:white;
+		padding:10px 20px;
+		font-size:20px;
+		background:indianred;
+		border-radius:8px;
+	}
+	.Register a:hover{
+		background:transparent;
+		border:3px solid indianred;
+	}
+	.h-txt{
+		max-width:650px;
+		position:absolute;
+		top:80%;
+		left:50%;
+		transform:translate(-50%,-50%);
+		text-align:center;
+		color:white;
+		}
+	.h-txt span{
+		letter-spacing:5px;
+	}
+	.h-txt h1{
+		font-size:2em;;
+	}
+	.h-txt a{
+		text-decoration:none;
+		background-color:indianred;
+		color:white;
+		padding:10px 20px;
+		letter-spacing:5px;
+		border-radius:8px;
+	}
+	.h-txt a:hover{
+		background:transparent;
+		border:3px solid indianred;
+	}
+		
+	</style>
+</head>
+<body>
+
+<header>
+	<nav>
+		<div class="logo">
+			Divine
+		</div>
+		<div class="menu">
+			<a href="#">Home</a>
+			<a href="#">About</a>
+			<label for="Projects">Projects</label>
+			<select id="Projects">
+				<option value="Residential buildings">Residential buildings</option>
+				<option value="Commercial buildings">Commercial buildings</option>
+				<option value="Institutionals buildings">Institutionals buildings</option>
+			</select>
+			<label for="Services">Services</label>
+			<select id="Services">
+				<option value="Carpenter">Carpenter</option>
+				<option value="Plumbing">Plumbing</option>
+				<option value="Electrician">Electrician</option>
+			</select>
+			<a href="#"> Contact</a>
+		</div>
+		<div class="Register">
+			<a href="#">Register</a>
+		</div>
+	</nav>
+	<section class="h-txt">
+		<span> Built Beautifully</span>
+		<h1> Come And Join Your Hands With Us To Built Your Dream Home</h1>
+		<br>
+		<a href="#">Book Your Slot</a>
+	</section>
+			
+</header>
+
+</body>
+</html>
