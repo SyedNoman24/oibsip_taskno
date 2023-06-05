@@ -1,0 +1,292 @@
+<DOCTYPE html>
+<html>
+<head>
+<title>PORTFOLIO</title>
+<style>
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	font-family:"poppins";
+	outline:none;
+	border:none;
+}
+body{
+	background-color:#081b29;
+	color:#ededed;
+}
+.header{
+	position:relative;
+	top:0;
+	left:0;
+	width:100%;
+	padding:2rem 9%;
+	
+	dispaly:flex;
+	justify-content:space-between;
+	align-items:center;
+}
+.logo a{
+	font-size:20px;
+	text-decoration:none;
+	color:cyan;
+	font-weight:700;
+	cursor:pointer;
+}
+
+.home{
+	position:relative;
+	height:100vh;
+	width:100%;
+	display:flex;
+	justify-content:space-between;
+	align-items:right-side;
+	padding:70px 10% 0;
+	top:20%;
+}
+.home .home-details{
+	max-width:600px;
+}
+.home-details h3{
+	font-size:40px;
+	font-weight:700;
+	letter-spacing:1px;
+	line-height:1.2;
+}
+.home-details h3:nth-child(2){
+	font-size:23px;
+	color:#e805b9;
+	font-weight:800;
+	margin-bottom:30px;
+}
+img{
+	border-radius:50%;
+	
+}
+.flex-container{
+	width:100%;
+	height:auto;
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+	justify-content:space-between;
+	
+}
+.flex-box1{
+	width:200px;
+	height:200px;
+	background:linear-gradient(purple,red);
+	color:white;
+	font-size:25px;
+	margin:10px;
+	margin-left:50px;
+	line-height:30px;
+	
+	border-radius:20px;
+}
+
+.flex-box2{
+	width:200px;
+	height:200px;
+	background:linear-gradient(purple,red);
+	color:white;
+	font-size:25px;
+	line-height:30px;
+	border-radius:20px;
+	margin:10px;
+}
+
+.flex-box3{
+	width:200px;
+	height:200px;
+	background:linear-gradient(purple,red);
+	color:white;
+	font-size:25px;
+	line-height:30px;
+	border-radius:20px;
+	margin:10px;
+}
+.flex-box4{
+	width:200px;
+	height:200px;
+	background:linear-gradient(purple,red);
+	color:white;
+	font-size:25px;
+	line-height:30px;
+	border-radius:20px;
+	margin:10px;
+}
+.flex-container h3{
+	color:cyan;
+}
+.edu{
+	margin:0;
+	height:100vh;
+	display:flex;
+}
+.edu ul{
+	padding:0;
+	list-style-type:none;
+}
+.edu ul li{
+	box-sizing:border-box;
+	width:20em;
+	height:10em;
+	font-size:20px;
+	border-radius:0.5em;
+	box-shadow:0 0 1em rgba(0,0,0,0.2);
+	color:white;
+	font-family:sans-serif;
+	text-transform:capitalize;
+	line-height:2em;
+	transition:0.3s;
+	cursor:pointer;
+}
+.edu ul li:nth-child(odd){
+	background:linear-gradient(to right,orange,tomato);
+	text-align:left;
+	padding-left:10%;
+	transform:perspective(500px)
+	rotatey(45deg)
+}
+.edu ul li:nth-child(even){
+	background:linear-gradient(to right,orange,tomato);
+	text-align:left;
+	padding-left:10%;
+	transform:perspective(500px)
+	rotatey(-45deg)
+}
+.edu ul li:nth-child(odd):hover{
+	padding-left:5%;
+	transform:perspective(200px)
+	rotatey(45deg)
+}
+.edu ul li:nth-child(even):hover{
+	padding-left:5%;
+	transform:perspective(200px)
+	rotatey(-45deg)
+}
+.sm a{
+		text-decoration:none;
+		color:white;
+		padding:10px 20px;
+		font-size:20px;
+		background:indianred;
+		border-radius:8px;
+	}
+.sm a:hover{
+	background:transparent;
+	border:3px solid indianred;
+}
+.navbar a{
+		text-decoration:none;
+		color:white;
+		margin-left:9rem;
+		padding:10px 20px;
+		font-size:20px;
+		position:relative;
+	}
+	.navbar a:before{
+		content:' ';
+		position:absolute;
+		top:0;
+		left:0;
+		width:0%;
+		height:100%;
+		border-bottom:2px solid indianred;
+		transition:0.4s linear;
+	}
+	.navbar a:hover:before{
+		width:90%;
+	}
+</style>
+</head>
+<body>
+	<header class="header">
+		<div class="logo">
+				<a href="#">PORTFOLIO</a>
+		</div>	
+		<nav class="navbar">
+			<a href="#">Home</a>
+			<a href="#">About</a>
+			<a href="#">Education</a>
+			<a href="#">Contact</a>
+		</nav>
+	</header>
+	<img src="port1.jpeg">
+	<section class="home">
+		<div class="home-details">
+		
+			<h3> Hi,i'm Syed Noman Saifi</h3>
+			<h3>Welcome to my portfolio! </h3>
+			<h4>As an Information Science Engineering student, 
+			I am thrilled to present a collection of 
+			my academic projects and personal explorations in the
+			world of technology and data.</h4>
+		</div>
+		<div class="sm">
+			<a href="https://www.instagram.com">Instagram</a>
+			<a href="https://www.linkedin.com">Linkedin</a>
+			<a href="https://www.github.com">Github</a>
+		</div>
+			
+		
+	</section>
+	<div class="flex-container">
+		<div class="flex-box1">
+			<h3>Skills</h3>
+			<ul>
+				<li>C</li>
+				<li>Python</li>
+				<li>Html</li>
+				<li>Css</li>
+				<li>Javascript</li>
+			</ul>
+		
+		</div>
+		<div class="flex-box2">
+			<h3>Projects</h3>
+			<ul>
+			<li>Presentation control using gestures</li>
+			</ul>
+		</div>
+		<div class="flex-box3">
+			<h3>languages</h3>
+			<ul>
+				<li>English</li>
+				<li>Hindi</li>
+				<li>Kannada</li>
+				<li>Urdu</li>
+			</ul>
+		</div>
+		<div class="flex-box4">
+			<h3>Hobbies</h3>
+			<ul>
+				<li>Playing Cricket</li>
+				<li>Cooking</li>
+				<li>Travelling</li>
+			</ul>
+		</div>
+	
+	</div>
+	<div class="edu">
+		<ul>
+			<li><h3><pre>Secondary School,
+	10th,Sarvodaya High School,
+	Graduated with 86.5%
+					</pre>
+				</h3>
+			</li>
+			<li><h3><pre>Pre-University College,
+		Sarvodaya PU College,
+		Graduated with 73.5%</pre>
+			</h3></li>
+			<li><h3>Bachelor Of Engineering,Sri Siddhartha Institute Of Technology,
+	Present CGPA 8.12 with no backlogs.
+			</h3></li>
+		</ul>
+	</div>
+	
+</body>
+</html>
